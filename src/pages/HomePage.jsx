@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 const HomePage = () => {
@@ -15,7 +16,7 @@ const HomePage = () => {
             <a href="/admission" className="boxspirit"><u>Apply Now!</u></a>
              </div>
             </div>
-            
+
             <p><b>Vivekanand College </b>is a premier educational institution dedicated to fostering academic excellence, innovation, and holistic development. Established in 1980, we have proudly served generations of students, empowering them to achieve their full potential.</p>
             <p>At Vivekanand College, we believe in a vibrant learning environment that extends beyond textbooks. Our state-of-the-art facilities, experienced faculty, and diverse student community create a unique ecosystem where curiosity thrives and future leaders are shaped.</p>
             <h2>Why Choose Vivekanand College?</h2>
@@ -32,11 +33,12 @@ const HomePage = () => {
              <p>Explore our vibrant campus and state-of-the-art facilities designed to enhance your learning experience and personal growth.</p>
              
              <div className="box1">
-                <p>Ready to explore our courses?</p>
+            <p>Ready to explore our courses?</p>
                 <a href="/courses" className="navitem">Explore Courses</a>
              </div>
             
              </div>
+             <Footer/>
         </div>
        
     )

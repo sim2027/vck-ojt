@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 const AdmissionPage = () =>{
@@ -55,6 +56,7 @@ const AdmissionPage = () =>{
                 <u><a href="/contact">Contact us Page</a></u>directly
             </p>
         </div>
+        <Footer/>
         </div>
         
     

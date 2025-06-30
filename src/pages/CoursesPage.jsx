@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 const CoursesPage = () => {
@@ -83,7 +84,9 @@ const CoursesPage = () => {
                 <div className="box">
                     <p>Have questions about a specific course?</p>
                     <a href="/contact" className="navitem">Inquire About Courses</a>
-                </div></div></div>
+                </div></div> 
+                <Footer/>
+                </div>
     )
 }
 export default CoursesPage;
