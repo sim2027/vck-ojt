@@ -1,7 +1,7 @@
 .header1{
     background-color: #007bff;
     color: #fff;
-    padding: 15px 20px;
+    padding: 13px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,46 +9,38 @@
     position: sticky;
     top: 0;
     z-index: 999;
-
-}
-.nav{
-    color:white;
-    text-decoration: none;
-    padding: 15px 20px;
-    font-weight: 500;
-      
-}
-.navbar{
-    font-size: 1.8em;
-    font-weight: bold;
-}
-.navbar a{
-    color: white !important;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover{
-    color: #E0E0E0;
+    margin-right: 0%;
 }
 
 .desktop-nav{
     display: flex;
-    gap: 25px;
+  /* Show by default */
+    gap: 15px;
+  /* Space between links */
     align-items: center;
+    display: inline-block;
+    
 }
 
 .nav{
     color: white;
     text-decoration: none;
-    font-weight: 500;
-    padding: 5px 0;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 15px 20px;
+    font-weight: 400;
 }
 
 .nav:hover{
-    color: #E0E0E0;
-    border-bottom: 2px solid #E0E0E0;
+    text-decoration: underline;
+    color: white;
+}
+a.navitem.nav:hover{
+    text-decoration: none;
+}
+.navbar{
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-right: 500px;
 }
 
 .navitem{
@@ -58,8 +50,7 @@
     border-radius: 5px;
     text-decoration: none;
     transition: background-color .3s ease;
-    font-weight: 700;
-    
+    font-weight: 600;
 }
 
 .boxspirit{
@@ -71,61 +62,43 @@
 .hero1{
     position: relative;
     width:100%;
-    height: 100%;
+    height: 350px;
     overflow: hidden;
-    margin-top: 40px;
-    border-radius: 8px;
+    margin-top: 20px;
 }
 .hero2{
     width: 100%;
-    height: 250px;
+    height: 350px;
     object-fit: fill;
     filter: brightness(50%);
+    border-radius: 8px;
 }
+
 .hero3{
-       position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-        width:90%;
-}
-.box2{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
     text-align: center;
+    width:90%
 }
 
-.hamburger-menu {
-  display: none;
-  /* Hide on desktop */
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  position: relative;
-  z-index: 1002;
-  /* Ensure it's above the drawer if needed */
+.hero3 h1{
+    font-size: 3.5em;
+    margin-bottom: 15px;
 }
 
-.hamburger-icon {
+.box1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.box2{
+    padding-bottom: 50px;
+}
+
+.drawer-nav.open+.drawer-overlay {
   display: block;
-  width: 30px;
-  height: 3px;
-  background-color: white;
-  margin: 6px 0;
-  transition: all 0.3s ease;
+  /* Show when drawer is open */
 }
-
-.hamburger-menu {
-    display: block;
-    /* Show hamburger on mobile */
-  }
-  
-  .center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-
-  }
-  
