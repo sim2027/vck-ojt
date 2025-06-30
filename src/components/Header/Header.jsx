@@ -5,14 +5,17 @@ const Header = () => {
             <div>
             <header className='header1'>
                 <nav>
-                    <Link to="/home">Home</Link> <br/>
-                    <Link to="/about">About</Link> <br/>
-                    <Link to="/contact"> Contact</Link> <br/>
-                    <Link to="/courses"> Courses</Link> <br/>
-                    <Link to="/admission"> Admission</Link> <br/>
-                    <Link to="/notfound"> NotFound</Link>
+                    <a className='navbar'>Vivekanand College</a>
+                    <Link to={"/home"} className='nav'>Home</Link>
+                    <Link to={"/about"}className='nav'>About</Link>
+                    <Link to={"/contact"}className='nav'>Contact</Link>
+                    <Link to={"/courses"}className='nav'>courses</Link>
+                    <Link to={"/admission"}className='navitem'>Apply Now </Link>
+                    <Link to={"/notfound"}className='nav'>notFound</Link>
+
         
                 </nav>
+        
             </header>
         </div>
     )  

@@ -2,10 +2,12 @@ import Header from "../components/Header/Header";
 
 const CoursesPage = () => {
     return(
-       
-        <div>
-            <Header/>
-            <h1>Our Academic Programs</h1>
+       <div className="root">
+        <Header/>
+         <div className="page-container" style={{overflow:"auto"}}>
+
+        
+            <h1> Our Academic Programs</h1>
             <p>Vivekanand College offers a comprehensive range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills demanded by today's dynamic global landscape. Our curriculum is regularly updated to reflect industry trends and academic advancements.</p>
             <h2>Discover Campus Life</h2>
             <hr></hr>
@@ -83,8 +85,9 @@ const CoursesPage = () => {
                 <p>In addition to traditional degree programs, we offer various certificate and diploma courses in areas like Digital Marketing, Web Development, Data Analytics, and Soft Skills Development, providing specialized training for career enhancement.</p>
                 <div className="box">
                     <p>Have questions about a specific course?</p>
-                    <a href="/contact" >Inquire About Courses</a>
+                    <a href="/contact" className="navitem">Inquire About Courses</a>
                 </div>
+        </div>
         </div>
     )
 }
