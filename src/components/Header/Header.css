@@ -1,4 +1,4 @@
-.header1{
+.main-header{
     background-color: #007bff;
     color: #fff;
     height: 75px;
@@ -102,3 +102,4 @@ a.navitem.nav:hover{
   display: block;
   /* Show when drawer is open */
 }
+
