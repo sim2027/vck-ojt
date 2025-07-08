@@ -28,8 +28,10 @@ h2{
 }
 
 .root{
-  background-color: #52d2d2; 
+  background-color: #52d2d2;
+  min-height: 1000vh; 
 }
+
 
 .image{
   border-radius: 8px;
@@ -59,6 +61,88 @@ td{
 
 body{
   overflow-y: hidden;
+}
+
+@keyframes fadeInUptoBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Start 20px below its final position */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* End at its original position */
+  }
+}
+
+/* Apply animation to elements with this class */
+.b1{
+  animation: fadeInUptoBottom 1s ease-out forwards;
+  /* 1s duration, smooth ease-out, stays at end state */
+  /* You might want to add animation-delay if multiple elements animate in sequence */
+}
+
+/* --- Basic Responsive Styles --- */
+@media (max-width: 768px) {
+  .box {
+    min-height: 100vh;
+    margin: 15px auto;
+    /* Slightly less margin on smaller screens */
+    padding: 15px;
+    /* Slightly less padding */
+  }
+
+  /* Home Page - Hero Section */
+  .hero1 {
+    height: 250px;
+    /* Shorter banner on smaller screens */
+  }
+
+  .hero3 h1 {
+    font-size: 2.2em;
+    /* Smaller heading */
+  }
+
+  .hero3 p {
+    font-size: 1em;
+    /* Smaller paragraph */
+  }
+
+  .boxspirit {
+    padding: 10px 20px;
+    /* Smaller button */
+    font-size: 1em;
+  }
+
+  /* Image Gallery */
+  .image {
+    grid-template-columns: 1fr;
+    /* Stack images in a single column */
+  }
+
+  .image img {
+    height: 180px;
+    /* Adjust height for stacked images */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Further adjustments for very small screens (phones) */
+  .box {
+    padding: 10px;
+    margin: 50px;
+  }
+
+  .hero3 h1 {
+    font-size: 1.8em;
+  }
+
+  .hero3 p {
+    font-size: 0.9em;
+  }
 }
 .page-container{
   background-color: #007BFF;
@@ -127,5 +211,5 @@ body{
 }
 /* Further adjustments for very small screens (phones) */
   .page-container {
-    padding: 10px;
-  }
+    padding:10px;
+}
