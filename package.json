@@ -24,5 +24,8 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "vite": "^6.3.5"
+  },
+  "engines": {
+    "node": "22.16.0" // Or ">=22.16.0" if you want to be super specific. "22.x" is generally good.
   }
 }
